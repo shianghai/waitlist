@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_series">
+
+
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.assassin.waitlist.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_resume"
+        android:name="com.assassin.waitlist.ui.resume.ResumeFragment"
+        android:label="@string/title_resume"
+        tools:layout="@layout/fragment_resume">
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_series"
+        android:name="com.assassin.waitlist.ui.series.SeriesFragment"
+        android:label="@string/title_series"
+        tools:layout="@layout/fragment_series" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_movies"
+        android:name="com.assassin.waitlist.ui.movies.MoviesFragment"
+        android:label="@string/title_movies"
+        tools:layout="@layout/fragment_movies" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.assassin.waitlist.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" >
+
+    </fragment>
+</navigation>

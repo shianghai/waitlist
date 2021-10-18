@@ -1,0 +1,148 @@
+package com.assassin.waitlist.classes;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
+
+public class SeriesInfo {
+    @SerializedName("id")
+    @Expose
+    private int id;
+
+    @SerializedName("title")
+    @Expose
+    private String title;
+
+    @SerializedName("poster_path")
+    @Expose
+    private String posterPath;
+
+    @SerializedName("release_date")
+    @Expose
+    private String releaseDate;
+
+    @SerializedName("vote_average")
+    @Expose
+    private float rating;
+
+    @SerializedName("genre_ids")
+    @Expose
+    private List<Integer> genreIds;
+    @SerializedName("overview")
+    @Expose
+    private String overview;
+
+    @SerializedName("backdrop_path")
+    @Expose
+    private String backdrop;
+
+    @SerializedName("first_air_date")
+    @Expose
+    private String firstAirDate;
+
+    @SerializedName("number_of_seasons")
+    @Expose
+    private int numberOfSeasons;
+
+    @SerializedName("number_of_episodes")
+    @Expose
+    private int numberOfEpisodes;
+
+    @SerializedName("name")
+    @Expose
+    private String name;
+
+
+    @SerializedName("genres")
+    @Expose
+    private List<GenreInfo> genres;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getPosterPath() {
+        return posterPath;
+    }
+
+    public void setPosterPath(String posterPath) {
+        this.posterPath = posterPath;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public float getRating() {
+        return rating;
+    }
+
+    public void setRating(float rating) {
+        this.rating = rating;
+    }
+
+    public List<Integer> getGenreIds() {
+        return genreIds;
+    }
+
+    public void setGenreIds(List<Integer> genreIds) {
+        this.genreIds = genreIds;
+    }
+
+    public String getOverview() {
+        return overview;
+    }
+
+    public void setOverview(String overview) {
+        this.overview = overview;
+    }
+
+    public String getBackdrop() {
+        return backdrop;
+    }
+
+    public void setBackdrop(String backdrop) {
+        this.backdrop = backdrop;
+    }
+
+    public List<GenreInfo> getGenres() {
+        return genres;
+    }
+
+    public void setGenres(List<GenreInfo> genres) {
+        this.genres = genres;
+    }
+
+    public void setFirstAirDate(String firstAirDate){this.firstAirDate = firstAirDate;}
+
+    public String getFirstAirDate(){return firstAirDate;}
+
+    public void setName(String name){this.name = name;}
+
+    public String getName(){return name;}
+
+    public void setNumberOfSeasons(int numberOfSeasons){this.numberOfSeasons = numberOfSeasons;}
+
+    public int getNumberOfSeasons(){return numberOfSeasons;}
+
+    public void setNumberOfEpisodes(int numberOfEpisodes){this.numberOfEpisodes = numberOfEpisodes;}
+
+    public int getNumberOfEpisodes(){return numberOfEpisodes;}
+}
